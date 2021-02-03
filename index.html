@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>Prueba Dico</title>
+
+    <link href="assets/img/logo.png" rel="icon">
+    <link href="assets/img/icon.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="100">
+
+
+    <header id="header" class="header fixed-top">
+        <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+
+            <a href="index.html" class="logo d-flex align-items-center">
+                <img src="assets/img/logo.png" alt="">
+                <span>Grupo Dico</span>
+            </a>
+
+            <nav id="navbar" class="navbar">
+                <ul>
+                    <li><a class="nav-link scrollto active " href="#header">Inicio</a></li>
+                    <li><a class="nav-link scrollto" href="#records">Registros</a></li>
+                </ul>
+                <i class="bi bi-list mobile-nav-toggle"></i>
+            </nav>
+
+
+        </div>
+    </header>
+
+    <section id="hero" class="hero d-flex align-items-center">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 d-flex flex-column justify-content-center">
+                    <h1 data-aos="fade-up">¡Bienvenido!</h1>
+                    <h2 data-aos="fade-up" data-aos-delay="400">Registra tu visita en el siguiente formulario</h2>
+                </div>
+                <div class="col-lg-6" data-aos="zoom-out" data-aos-delay="200">
+                    <form class="php-email-form" id="recordsF">
+                        <div class="row gy-4">
+
+                            <div class="col-md-12">
+                                <input type="text" name="name" id="name" class="form-control" placeholder="Tu Nombre">
+                            </div>
+
+                            <div class="col-md-12 ">
+                                <input type="email" class="form-control" name="email" id="email" placeholder="Tu Email">
+                            </div>
+
+                            <div class="col-md-12">
+                                <input type="text" class="form-control" name="phone" id="phone" placeholder="Tu Teléfono">
+                            </div>
+
+                            <div class="col-md-12">
+                                <textarea class="form-control" name="message" id="message" rows="6" placeholder="Tu Mensaje"></textarea>
+                            </div>
+
+                            <div class="col-md-12 text-center">
+                                <button id="saveR" type="submit">¡Registrarme!
+                                    <span id="loadingR" hidden class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                                </button>
+                            </div>
+
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="records">
+
+        <div class="container" data-aos="fade-up">
+
+            <header class="section-header">
+                <h2>Nuestros registros</h2>
+                <p>Lista completa de visitantes</p>
+            </header>
+
+            <div class="row">
+
+                <div class="table-responsive table-hover p-5">
+                    <table class="mt-4 table">
+                        <thead class="">
+                            <tr>
+                                <th scope="col">Nombre</th>
+                                <th scope="col">Email</th>
+                                <th scope="col">Teléfono</th>
+                                <th scope="col">Mensaje</th>
+                            </tr>
+                        </thead>
+                        <tbody id="recordsTable">
+
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class="col-md-12 text-center php-email-form">
+                    <button id="downloadR">¡Descargar!
+                        <span id="loadingD" hidden class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+            class="bi bi-arrow-up-short"></i></a>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
